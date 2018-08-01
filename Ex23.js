@@ -3,11 +3,19 @@ function main() {
     var userInput = prompt("Enter password.");
     while (userInput != officialPW)
     {
-       var userInput = prompt("Try again");
+       userInput = prompt("Try again"); // You don't need to create a new variable each time, just reuse it.
     }
 }
 function yay(){
-    alert("THAT IS CORRECT!!!")
+    alert("THAT IS CORRECT!!!");
 }
 main();
-yay();
+yay(); // KEY: Nice use of additional functions :-)
+
+/*
+
+	KEY: This looks good, but where are your comments?!
+
+	Also, get in the habit of using '===' to test for equality and '!==' to test for inequality.
+
+*/
